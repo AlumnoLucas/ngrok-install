@@ -8,14 +8,3 @@
 <br>
 <img src="https://github.com/TheHorseOnFireARG/ngrok-install/termux.jpg>">
 <hr>
-<h6>How to install</h6>
-<blockquote class="blockquote">
-<p class="mb-0">you must clone the repository</p>
-<p class="mb-0"> chmod 777 ngrok-install </p>
-<p class="mb-0"> ./ngrok-install </p>
-<p class="mb-0"> -d Download ngrok" </p>
-
-<p class="mb-0"> -a Authenticate authoken  </p>
-
-<p class="mb-0"> -e Delete for ngrok  </p>
-</blockquote>
