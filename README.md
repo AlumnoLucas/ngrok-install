@@ -10,9 +10,7 @@
 <hr>
 <h6>How to install</h6>
 <blockquote class="blockquote">
-<p class="mb-0">
-  git clone https://github.com/TheHorseOnFireARG/ngrok-install
-  chmod 777 ngrok-install 
-  ./ngrok-install
-  </p>
+<p class="mb-0">you must clone the repository</p>
+<p class="mb-0"> chmod 777 ngrok-install </p>
+<p class="mb-0"> ./ngrok-install </p>
 </blockquote>
