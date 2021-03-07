@@ -13,4 +13,9 @@
 <p class="mb-0">you must clone the repository</p>
 <p class="mb-0"> chmod 777 ngrok-install </p>
 <p class="mb-0"> ./ngrok-install </p>
+<p class="mb-0"> -d Download ngrok" </p>
+
+<p class="mb-0"> -a Authenticate authoken  </p>
+
+<p class="mb-0"> -e Delete for ngrok  </p>
 </blockquote>
