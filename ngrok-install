@@ -1,0 +1,35 @@
+#!/bin/bash
+setterm -foreground orange
+echo " -d download ngrok"
+echo " -a Autenticar authoken "
+echo " -e delete for ngrok "
+while [ -n "$1" ]; do 
+
+	case "$1" in
+
+    -d) echo " Download for ngrok-stable-linux-386 "
+    cd /data/data/com.termux/files/usr/bin
+    wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-386.zip
+    unzip ngrok-stable-linux-386.zip
+    chmod 700 ngrok
+    ;; 
+
+    -e) echo "delete for ngrok the termux"
+    rm -rf /data/data/com.termux/files/usr/bin/ngrok
+    rm -rf //data/data/com.termux/files/usr/bin/ngrok-stable-linux-386.zip
+    ;;
+
+	-a) echo " Autenticar authoken"
+    read -p $" Authoken: " authoken
+#    case $authoken in
+./ngrok authtoken $authoken    
+	;;
+
+	*) echo "Option $1 not recognized" ;; # In case you typed a different option other than a,b,c
+
+	esac
+
+	shift
+
+done
+./ngrok authtoken <your_auth_token>
