@@ -1,0 +1,40 @@
+#!/bin/bash
+#this program is created by github.com/TheHorseOnFireARG
+echo "this program installs ngrok in termux,"
+echo "moves it to binaries"
+echo "and performs token authentication."
+echo ""
+echo " -d download ngrok"
+echo ""
+echo " -a authenticate authoken "
+echo ""
+echo " -e delete for ngrok "
+echo ""
+while [ -n "$1" ]; do # while loop starts
+
+        case "$1" in
+
+        -d) echo " download ngrok " 
+cd /data/data/com.termux/files/usr/bin
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip
+unzip ngrok-stable-linux-arm.zip
+chmod 700 ngrok
+;; # Message for -a option
+
+        -a) echo " authenticate authoken"
+read -p $" Authoken: " authoken
+ngrok authtoken $authoken
+    ;; # Message for -b option
+
+        -e) echo " delete for ngrok" 
+rm -rf /data/data/com.termux/files/usr/bin/ngrok
+rm -rf /data/data/com.termux/files/usr/bin/ngrok-stable-linux-arm.zip
+    ;;
+
+        *) echo "Option $1 not recognized" ;; # In case you typed a different>
+
+        esac
+
+        shift
+
+done
