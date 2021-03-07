@@ -6,5 +6,5 @@
 <hr>
 <h3>Ngrok-install in Termux</h3>
 <br>
-<img src="https://github.com/TheHorseOnFireARG/ngrok-install/termux.jpg>">
+<img src="https://github.com/TheHorseOnFireARG/ngrok-install/termux.png">
 <hr>
